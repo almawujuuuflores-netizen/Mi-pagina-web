@@ -1,0 +1,204 @@
+/* 🌸 Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffd9e8; /* rosa pastel liso */
+    margin: 0;
+    padding: 0;
+    color: #4a2c2a;
+    text-align: center;
+}
+
+/* 💕 Encabezado */
+header {
+    background-color: #ffb6c1;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* 🌸 Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #ff7fa8;
+}
+
+/* 🏠 Sección de inicio */
+.inicio {
+    padding: 40px 20px;
+}
+
+.inicio h2 {
+    color: #b84a62;
+    font-size: 1.8rem;
+}
+
+.inicio p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#bienvenidaBtn {
+    background-color: #ff7fa8;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#bienvenidaBtn:hover {
+    background-color: #ff5e94;
+}
+
+/* ☕ Historia */
+.historia {
+    padding: 30px 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.historia h2 {
+    color: #b84a62;
+}
+
+.historia p {
+    font-size: 1rem;
+    color: #4a2c2a;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+/* 🖼 Galería general */
+.galeria-local,
+.galeria-menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.galeria-local img,
+.galeria-menu img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 🍰 Elementos del menú */
+.item {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    width: 320px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.item p {
+    color: #4a2c2a;
+    font-size: 0.95rem;
+}
+
+/* 💌 Contacto */
+.contacto {
+    padding: 40px 20px;
+}
+
+.contacto h2 {
+    color: #b84a62;
+}
+
+form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    border: 1px solid #ffb6c1;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    background-color: #ff7fa8;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff5e94;
+}
+
+/* 🩷 Footer */
+footer {
+    background-color: #ffb6c1;
+    padding: 15px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+/* 💗 Corazones flotantes */
+.corazones {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* 📱 Responsivo (solo se reduce el tamaño de texto si la pantalla es pequeña) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .item {
+        width: 280px;
+    }
+
+    .galeria-local,
+    .galeria-menu {
+        gap: 10px;
+    }
+}
